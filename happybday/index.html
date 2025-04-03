@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Beautiful Memories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Password Protection Modal -->
+    <div id="passwordModal" class="modal">
+        <div class="modal-content">
+            <h2>Happy Birthday! 🎉</h2>
+            <p>For My Dearest Sangmitra...</p>
+            <p class="birthday-msg">I've prepared something special just for you!</p>
+            <input type="text" id="passwordInput" placeholder="Which month did we meet? 💕">
+            <button id="submitPassword">Start Your Surprise ✨</button>
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="hidden">
+        <!-- Hero Section -->
+        <section id="hero" class="section">
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>For Sangmitra,</h1>
+                <h2>Happy Birthday baby</h2>
+                <p class="hero-message">Every moment with you is a gift I cherish...</p>
+                <button id="exploreBtn" class="cta-button">Scroll down ✨</button>
+            </div>
+            <div class="floating-hearts"></div>
+            <div class="falling-petals"></div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section id="gallery" class="section">
+            <h2>Some moments together</h2>
+            <div class="swiper gallery-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Gallery items will be added dynamically -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- Video Montage -->
+        <section id="videos" class="section">
+            <h2>Special Moments</h2>
+            <div class="video-container">
+                <div class="video-player">
+                    <!-- Video player will be added dynamically -->
+                </div>
+                <div class="video-playlist">
+                    <!-- Playlist will be added dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Notes -->
+        <section id="notes" class="section">
+            <h2>Dear Sangmitra</h2>
+            <div class="notes-container">
+                🎉 Happy 20th Birthday, my love! 🎂✨
+
+Today isn’t just about candles and cake—it’s about you. The incredible person who’s weathered storms with a smile, who dreams of bikes and boundless adventures, and who’s somehow still the strongest soul I know. You’re finally 20!(Does this mean I get to tease you about being "old" now?)
+
+I know things feel heavy right now, and I wish I could snap my fingers to fix it all. But today? Today is yours. Let’s press pause on the chaos and just celebrate you—the way you deserve.
+
+Your dreams? They’re not just dreams—they’re promises waiting to happen. That bike? Those trips around the world? I’ve seen your grit. If anyone can turn "impossible" into "I did it," it’s you. 😤
+
+You’ve survived 100% of your worst days. Every single one. That’s not luck—that’s you being relentlessly brave.
+
+You deserve joy—not just today, but always. No matter what anyone says, I know—because I’ve watched you fight, love, and grow for two years.
+
+❣️ Eat the damn meal. Even when your mood screams "no."
+❣️ Trust the mess. This pain? It’s a comma, not a period.
+❣️ Lean on me. I’ll be here, stubbornly believing in you—even when you forget to.
+
+So blow those candles out, duffer. The best chapters are coming. I’ll be the one cheering loudest when they do.
+
+Happy Birthday, my betuu.
+Now go conquer your 20s—I’ll be right beside you,
+stealing your fries and reminding you how loved you are.
+
+Yours truly,
+Jatin
+
+            </div>
+        </section>
+
+        <!-- Kiss Button Section -->
+        <section id="kiss" class="section">
+            <h2>A Special Surprise</h2>
+            <div class="kiss-container">
+                <button id="kissButton" class="kiss-button">
+                    <span class="button-text">Click me babe</span>
+                    <div class="heart-pulse"></div>
+                </button>
+                <div class="video-overlay hidden">
+                    <video id="kissVideo" src="videos/kiss.mp4" muted playsinline autoplay>
+                        Your browser doesn't support video playback.
+                    </video>
+                    <div class="love-text">I LOVE YOU</div>
+                    <div class="floating-hearts-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Surprise Ending -->
+        <section id="surprise" class="section">
+            <h2>One Last Thing...</h2>
+            <button id="hugButton" class="hug-button">Click me</button>
+        </section>
+
+        <!-- Background Music Toggle -->
+        <div id="musicToggle" class="music-toggle">
+            <i class="fas fa-music"></i>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
